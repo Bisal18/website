@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Valentine’s Day Tanisa ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fff1f5, #ffe4ec);
+      color: #333;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 90px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: #b30047;
+    }
+
+    h1 { font-size: 3rem; margin-bottom: 15px; }
+    h2 { font-size: 2.4rem; margin-bottom: 30px; }
+
+    p { line-height: 1.9; max-width: 800px; margin: auto; }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: radial-gradient(circle, #fff 10%, #ffe6ee 60%);
+    }
+
+    .hero span { color: #e6005c; }
+
+    /* MUSIC */
+    .music-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #e6005c;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 18px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: translateY(-8px); }
+
+    /* GALLERY */
+    .photo {
+      height: 260px;
+      border-radius: 18px;
+      background: #ffd6e5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a00040;
+    }
+
+    /* LETTER */
+    .letter {
+      background: white;
+      padding: 50px 30px;
+      border-radius: 22px;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    }
+
+    /* SURPRISE */
+    button {
+      margin-top: 30px;
+      padding: 16px 42px;
+      border-radius: 50px;
+      border: none;
+      background: #e6005c;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    #final {
+      display: none;
+      margin-top: 35px;
+      font-size: 1.6rem;
+      font-family: 'Playfair Display', serif;
+      color: #b30047;
+    }
+
+    /* HEARTS */
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      animation: float 6s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes float {
+      to { transform: translateY(-120vh); opacity: 0; }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.4rem; }
+      h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="music" autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+<button class="music-btn" onclick="toggleMusic()">🔊 Music</button>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Happy Valentine’s Day, <span>Tanisa</span> ❤️</h1>
+  <p>9 years, countless memories, one forever.</p>
+</section>
+
+<!-- TIMELINE -->
+<section>
+  <h2>9 Years of Us</h2>
+  <div class="grid">
+    <div class="card">The day everything changed ❤️</div>
+    <div class="card">Growing, learning, fighting & loving ✨</div>
+    <div class="card">Holding hands through every phase 🤍</div>
+    <div class="card">Still choosing each other — always 💍</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <h2>Our Memories</h2>
+  <div class="grid">
+    <div class="photo">Your Smile</div>
+    <div class="photo">Our Laughs</div>
+    <div class="photo">Our Moments</div>
+    <div class="photo">Our Love</div>
+  </div>
+</section>
+
+<!-- LETTER -->
+<section>
+  <h2>For You, Always</h2>
+  <div class="letter">
+    <p>
+      Tanisa,<br><br>
+      Loving you for these nine years has taught me what home truly means.
+      You are my calm in chaos, my strength when I fall, and my happiness
+      in the smallest moments. I don’t need perfect days — I just need you
+      beside me.<br><br>
+      Thank you for growing with me, believing in us, and loving me the way
+      you do. My heart has chosen you again and again — and it always will.
+    </p>
+  </div>
+</section>
+
+<!-- REASONS -->
+<section>
+  <h2>Why I Love You</h2>
+  <div class="grid">
+    <div class="card">Your heart 💕</div>
+    <div class="card">Your patience 🌸</div>
+    <div class="card">Your strength ✨</div>
+    <div class="card">Your love ❤️</div>
+  </div>
+</section>
+
+<!-- SURPRISE -->
+<section>
+  <h2>One Last Thing…</h2>
+  <button onclick="reveal()">Click Here</button>
+  <div id="final">Not just my Valentine — my forever. 💖</div>
+</section>
+
+<script>
+  function reveal() {
+    document.getElementById("final").style.display = "block";
+  }
+
+  function toggleMusic() {
+    const music = document.getElementById("music");
+    music.paused ? music.play() : music.pause();
+  }
+
+  function heart() {
+    const h = document.createElement("div");
+    h.className = "heart";
+    h.innerHTML = "❤️";
+    h.style.left = Math.random() * 100 + "vw";
+    h.style.fontSize = 14 + Math.random() * 20 + "px";
+    document.body.appendChild(h);
+    setTimeout(() => h.remove(), 6000);
+  }
+
+  setInterval(heart, 350);
+</script>
+
+</body>
+</html>
