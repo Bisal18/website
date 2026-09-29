@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AURA ATHLETICS // KINETIX PERFORMANCE LAB</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#570032",
+            "on-secondary": "#003640",
+            "on-background": "#e3e1ee",
+            "primary": "#d0bcff",
+            "on-primary-fixed-variant": "#5516be",
+            "surface": "#12131c",
+            "outline": "#958ea0",
+            "surface-dim": "#12131c",
+            "on-tertiary-fixed": "#3e0022",
+            "surface-variant": "#33343e",
+            "on-tertiary": "#640039",
+            "on-primary": "#3c0091",
+            "on-secondary-fixed-variant": "#004e5c",
+            "surface-container-highest": "#33343e",
+            "on-primary-fixed": "#23005c",
+            "tertiary": "#ffb0cd",
+            "inverse-primary": "#6d3bd7",
+            "surface-container-low": "#1a1b24",
+            "on-secondary-container": "#00424e",
+            "on-error-container": "#ffdad6",
+            "on-surface": "#e3e1ee",
+            "secondary": "#4cd7f6",
+            "tertiary-fixed-dim": "#ffb0cd",
+            "outline-variant": "#494454",
+            "error-container": "#93000a",
+            "inverse-on-surface": "#2f303a",
+            "on-secondary-fixed": "#001f26",
+            "surface-tint": "#d0bcff",
+            "surface-container": "#1e1f28",
+            "secondary-container": "#03b5d3",
+            "surface-container-high": "#282933",
+            "inverse-surface": "#e3e1ee",
+            "on-error": "#690005",
+            "background": "#12131c",
+            "primary-fixed-dim": "#d0bcff",
+            "surface-bright": "#383843",
+            "on-tertiary-fixed-variant": "#8c0053",
+            "secondary-fixed-dim": "#4cd7f6",
+            "on-primary-container": "#340080",
+            "secondary-fixed": "#acedff",
+            "on-surface-variant": "#cbc3d7",
+            "tertiary-container": "#f751a1",
+            "primary-fixed": "#e9ddff",
+            "primary-container": "#a078ff",
+            "error": "#ffb4ab",
+            "surface-container-lowest": "#0d0e16",
+            "tertiary-fixed": "#ffd9e4"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-sm": "1.25rem",
+            "gutter-sm": "1rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "margin": "3rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "display-hero": [
+              "Space Grotesk"
+            ],
+            "body-sm": [
+              "Inter"
+            ],
+            "body-md": [
+              "Inter"
+            ],
+            "label-metric": [
+              "Space Grotesk"
+            ],
+            "title-md": [
+              "Space Grotesk"
+            ],
+            "headline-md": [
+              "Space Grotesk"
+            ],
+            "label-caps": [
+              "Space Grotesk"
+            ],
+            "display-hero-mobile": [
+              "Space Grotesk"
+            ],
+            "headline-lg-mobile": [
+              "Space Grotesk"
+            ],
+            "headline-sm": [
+              "Space Grotesk"
+            ],
+            "body-lg": [
+              "Inter"
+            ],
+            "headline-lg": [
+              "Space Grotesk"
+            ]
+          },
+          "fontSize": {
+            "display-hero": [
+              "56px",
+              {
+                "lineHeight": "64px",
+                "letterSpacing": "-0.04em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-sm": [
+              "13px",
+              {
+                "lineHeight": "20px",
+                "letterSpacing": "0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "15px",
+              {
+                "lineHeight": "24px",
+                "letterSpacing": "0em",
+                "fontWeight": "400"
+              }
+            ],
+            "label-metric": [
+              "14px",
+              {
+                "lineHeight": "18px",
+                "letterSpacing": "0.08em",
+                "fontWeight": "600"
+              }
+            ],
+            "title-md": [
+              "16px",
+              {
+                "lineHeight": "24px",
+                "letterSpacing": "0.02em",
+                "fontWeight": "500"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "32px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-caps": [
+              "11px",
+              {
+                "lineHeight": "14px",
+                "letterSpacing": "0.15em",
+                "fontWeight": "700"
+              }
+            ],
+            "display-hero-mobile": [
+              "36px",
+              {
+                "lineHeight": "44px",
+                "letterSpacing": "-0.03em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-lg-mobile": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-sm": [
+              "20px",
+              {
+                "lineHeight": "28px",
+                "letterSpacing": "0em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "28px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-lg": [
+              "36px",
+              {
+                "lineHeight": "44px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    /* Custom HUD scanlines and subtle radial glow */
+    .bg-grid-hud {
+      background-size: 36px 36px;
+      background-image: 
+        linear-gradient(to right, rgba(73, 68, 84, 0.15) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(73, 68, 84, 0.15) 1px, transparent 1px);
+    }
+    .hud-glow {
+      box-shadow: 0 0 25px -3px rgba(76, 215, 246, 0.25);
+    }
+    .purple-glow {
+      box-shadow: 0 0 30px -4px rgba(160, 120, 255, 0.35);
+    }
+    /* Comparison slider styles */
+    .slider-handle::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+      border-radius: 9999px;
+      background: #4cd7f6;
+      box-shadow: 0 0 15px #4cd7f6;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-secondary selection:text-on-secondary">
+<!-- ========================================== -->
+<!-- 1. TOP NAVBAR (Shared Component Alignment) -->
+<!-- ========================================== -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-2xl backdrop-blur-xl docked full-width top sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<span class="w-3 h-3 rounded-full bg-secondary animate-ping"></span>
+<span class="text-headline-sm font-headline-sm tracking-widest text-on-surface dark:text-on-surface uppercase">AURA ATHLETICS</span>
+<span class="hidden xl:inline-flex items-center px-2 py-0.5 rounded-full text-label-caps font-label-caps bg-surface-container-high border border-outline-variant/40 text-secondary tracking-widest">
+          ● LAB STATUS: 24/7 BIOMETRIC SYNC
+        </span>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-secondary dark:text-secondary font-title-md text-title-md border-b-2 border-secondary pb-1" href="#overview">Programs</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-title-md text-title-md hover:text-secondary dark:hover:text-secondary hover:border-secondary transition-all duration-300" href="#trainers">Trainers</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-title-md text-title-md hover:text-secondary dark:hover:text-secondary hover:border-secondary transition-all duration-300" href="#timetable">Timetable</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-title-md text-title-md hover:text-secondary dark:hover:text-secondary hover:border-secondary transition-all duration-300" href="#calculators">Calculators</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-title-md text-title-md hover:text-secondary dark:hover:text-secondary hover:border-secondary transition-all duration-300" href="#membership">Membership</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-3">
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded text-label-caps font-label-caps text-on-surface-variant hover:text-secondary border border-outline-variant/50 hover:border-secondary transition-all duration-200" id="open-portal-btn">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+          Member Portal
+        </button>
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded bg-primary-container text-on-primary-container text-label-caps font-label-caps hover:bg-primary transition-all duration-200 shadow-lg active:scale-95" href="#book-tour">
+          Book Session
+        </a>
+<!-- Mobile Menu Toggle Button -->
+<button class="lg:hidden p-2 rounded text-on-surface hover:text-secondary" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Nav -->
+<div class="hidden lg:hidden bg-surface-container-lowest/95 backdrop-blur-xl border-b border-outline-variant/30 px-6 py-6 space-y-4" id="mobile-nav">
+<div class="flex flex-col space-y-3 font-title-md text-title-md">
+<a class="text-secondary" href="#overview">Programs</a>
+<a class="text-on-surface-variant hover:text-secondary" href="#trainers">Trainers</a>
+<a class="text-on-surface-variant hover:text-secondary" href="#timetable">Timetable</a>
+<a class="text-on-surface-variant hover:text-secondary" href="#calculators">Calculators</a>
+<a class="text-on-surface-variant hover:text-secondary" href="#membership">Membership</a>
+<a class="text-on-surface-variant hover:text-secondary" href="#results">Results</a>
+<a class="text-on-surface-variant hover:text-secondary" href="#gallery">Lab Gallery</a>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex flex-col gap-3">
+<button class="w-full text-center py-2.5 rounded border border-outline-variant text-label-caps font-label-caps text-on-surface hover:text-secondary" id="open-portal-btn-mob">
+          Open Member Portal
+        </button>
+</div>
+</div>
+</header>
+<!-- ========================================== -->
+<!-- 2. SECTION 1 — IMMERSIVE 3D HERO -->
+<!-- ========================================== -->
+<section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-surface-container-lowest bg-grid-hud">
+<!-- MANDATORY WEBGL SHADER BACKGROUND -->
+<!-- STITCH_SHADER_START:ANIMATION_3 class="absolute inset-0 w-full h-full pointer-events-none opacity-85" -->
+<div class="absolute inset-0 w-full h-full pointer-events-none opacity-85" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_3" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_3');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+// Simplex noise helper
+vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
+
+float snoise(vec2 v) {
+  const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
+  vec2 i  = floor(v + dot(v, C.yy) );
+  vec2 x0 = v -   i + dot(i, C.xx);
+  vec2 i1;
+  i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+  vec4 x12 = x0.xyxy + C.xxzz;
+  x12.xy -= i1;
+  i = mod289(i);
+  vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 )) + i.x + vec3(0.0, i1.x, 1.0 ));
+  vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+  m = m*m ;
+  m = m*m ;
+  vec3 x = 2.0 * fract(p * C.www) - 1.0;
+  vec3 h = abs(x) - 0.5;
+  vec3 ox = floor(x + 0.5);
+  vec3 a0 = x - ox;
+  m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+  vec3 g;
+  g.x  = a0.x  * x0.x  + h.x  * x0.y;
+  g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+  return 130.0 * dot(m, g);
+}
+
+void main() {
+    vec2 st = gl_FragCoord.xy / u_resolution.xy;
+    vec2 uv = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / min(u_resolution.x, u_resolution.y);
+    
+    vec2 mouse = u_mouse / u_resolution;
+    vec2 mouseOffset = (mouse - 0.5) * 0.2;
+    uv += mouseOffset;
+
+    float t = u_time * 0.18;
+    
+    // Deep atmospheric background
+    vec3 col = vec3(0.04, 0.045, 0.07); // deep obsidian void
+
+    // Dynamic wave 1 - Electric Purple
+    float n1 = snoise(vec2(uv.x * 1.8 + t * 0.5, uv.y * 1.5 - t * 0.3));
+    float wave1 = smoothstep(0.15, 0.95, sin(uv.y * 3.5 + n1 * 1.4 + t) * 0.5 + 0.5);
+    vec3 purpleGlow = vec3(0.54, 0.36, 0.96) * wave1 * 0.45; // #8b5cf6
+    
+    // Dynamic wave 2 - Neon Cyan / Electric Blue
+    float n2 = snoise(vec2(uv.x * 2.2 - t * 0.4, uv.y * 2.0 + t * 0.2));
+    float wave2 = smoothstep(0.3, 0.98, cos(uv.x * 3.0 + n2 * 1.8 - t * 0.8) * 0.5 + 0.5);
+    vec3 cyanGlow = vec3(0.02, 0.71, 0.83) * wave2 * 0.35; // #06b6d4
+
+    // Subtle Magenta / Crimson accent core
+    float coreDist = length(uv - vec2(0.2, 0.05));
+    float coreGlow = smoothstep(0.9, 0.0, coreDist) * 0.25;
+    vec3 magenta = vec3(0.92, 0.28, 0.6) * coreGlow;
+
+    // Atmospheric noise vignette
+    float vignette = smoothstep(1.4, 0.2, length(uv));
+    
+    col += purpleGlow + cyanGlow + magenta;
+    col *= vignette;
+
+    // Subtle digital grid scanlines
+    float scanline = sin(gl_FragCoord.y * 0.7) * 0.03;
+    col -= scanline;
+
+    gl_FragColor = vec4(col, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_3 -->
+<!-- Ambient Gradient & Refraction Vignette -->
+<div class="absolute inset-0 bg-gradient-to-b from-surface/40 via-surface-container-lowest/50 to-surface-container-lowest pointer-events-none"></div>
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-primary-container/15 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Headline & Copy Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high/80 border border-secondary/40 text-secondary text-label-caps font-label-caps">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+          KINETIX AEROSPACE BIOMECHANICS V4.8
+        </div>
+<h1 class="text-headline-lg-mobile md:text-display-hero font-display-hero uppercase tracking-tight text-on-surface">
+          FORGE YOUR <br class="hidden sm:inline"/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-primary to-tertiary">STRONGEST SELF.</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl">
+          Train harder. Move smarter. Become unstoppable. High-performance biometric training, next-generation strength biomechanics, and luxury athletic recovery.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="inline-flex items-center gap-2 px-8 py-4 rounded bg-gradient-to-r from-secondary-container to-inverse-primary text-white text-label-caps font-label-caps uppercase tracking-wider hover:opacity-95 transition-all duration-300 hud-glow active:scale-95" href="#book-tour">
+            START YOUR JOURNEY
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-8 py-4 rounded bg-surface-container-low/80 hover:bg-surface-container text-on-surface border border-outline-variant/40 hover:border-secondary transition-all duration-200 text-label-caps font-label-caps uppercase tracking-wider" href="#membership">
+            EXPLORE MEMBERSHIPS
+          </a>
+</div>
+<!-- Telemetry Live Bar -->
+<div class="pt-6 border-t border-outline-variant/30 flex flex-wrap gap-8 items-center">
+<div>
+<div class="text-label-caps font-label-caps text-outline uppercase">METRIC INDEX</div>
+<div class="text-title-md font-title-md text-secondary">VO2 MAX OPTIMIZATION +34%</div>
+</div>
+<div>
+<div class="text-label-caps font-label-caps text-outline uppercase">NEURAL LATENCY</div>
+<div class="text-title-md font-title-md text-primary">1.2ms BIO-SENSOR SYNC</div>
+</div>
+</div>
+</div>
+<!-- Hero Visual & Floating 3D Holographic Hud Cards -->
+<div class="lg:col-span-5 relative flex items-center justify-center">
+<!-- Center Silhouette Card -->
+<div class="relative w-full max-w-md aspect-[4/5] rounded-xl overflow-hidden border border-outline-variant/40 bg-surface-container/60 backdrop-blur-xl shadow-2xl p-3 flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="A cinematic hyper-realistic athletic silhouette in an obsidian minimalist dark training lab, illuminated by neon cyan edge lighting and subtle violet volumetric mist, wearing sleek futuristic compression apparel, capturing intense strength and robotic biomechanical elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_b86lGw06ubAA-KnMsjqohbLKdmn2bfHBrf7RCy5I9Uf-0fJF7oCH7hcNWZJyXBUVPwyVC5UYAsKmpEmImMEbFipHqMvHL2ZA9-22EooZFiwhO5azZ_mSkrGu_G7B64USBp2DSFtM_mBLPX0YOoO9Fwz6k9JE-5aOCfS-r0lBed2KsNTCCIAr4C7pU6p5d-xFvY8B2UpvV31Am4ODB7o7R5vcF6yVgd94PjB7x1HW2qs0lGExnRST8w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<!-- Inner telemetry HUD overlay -->
+<div class="relative z-10 p-5 bg-surface-container-lowest/80 backdrop-blur-md rounded border border-outline-variant/40 space-y-2">
+<div class="flex items-center justify-between text-label-caps font-label-caps text-secondary">
+<span>● KINETIX KINEMATICS SCAN</span>
+<span>LIVE 120 FPS</span>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface">ATHLETE ID: 8940-X</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Biomechanics Symmetrical Score: 98.4%</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-3xl">query_stats</span>
+</div>
+</div>
+</div>
+<!-- Floating Card 1: 2,500+ Athletes -->
+<div class="absolute -top-6 -left-6 sm:-left-10 bg-surface-container-high/90 backdrop-blur-lg border border-secondary/40 p-4 rounded-lg shadow-xl hidden sm:block animate-bounce duration-1000">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl">monitoring</span>
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface">2,500+</div>
+<div class="text-label-caps font-label-caps text-on-surface-variant">ACTIVE ELITE ATHLETES</div>
+</div>
+</div>
+</div>
+<!-- Floating Card 2: Coaches & 24/7 -->
+<div class="absolute -bottom-6 -right-4 sm:-right-8 bg-surface-container-high/90 backdrop-blur-lg border border-primary/40 p-4 rounded-lg shadow-xl">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">verified_user</span>
+<div>
+<div class="text-headline-sm font-headline-sm text-on-surface">15+ OLYMPIC COACHES</div>
+<div class="text-label-caps font-label-caps text-on-surface-variant">24/7 BIOMETRIC LAB ACCESS</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mouse Scroll Down Pill -->
+<a class="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center text-outline-variant hover:text-secondary transition-colors" href="#why-us">
+<span class="text-label-caps font-label-caps">SCROLL TO TELEMETRY</span>
+<span class="material-symbols-outlined animate-pulse">keyboard_arrow_down</span>
+</a>
+</section>
+<!-- ========================================== -->
+<!-- 3. SECTION 2 — WHY CHOOSE US -->
+<!-- ========================================== -->
+<section class="py-24 max-w-7xl mx-auto px-6" id="why-us">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<div class="text-label-caps font-label-caps text-secondary mb-2">ENGINEERED ADVANTAGE</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">
+          BUILT FOR PEOPLE WHO <br class="hidden sm:inline"/>REFUSE TO SETTLE.
+        </h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-md">
+        Traditional gyms give you iron and open hours. AURA integrates aerospace telemetry, circadian optimization, and biomechanical precision into every rep.
+      </p>
+</div>
+<!-- 6 Glassmorphism Bento Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group p-8 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-secondary/60 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-6 border border-outline-variant/40 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">fingerprint</span>
+</div>
+<div class="text-label-caps font-label-caps text-outline mb-1">01 // AUTONOMY</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">24/7 Biometric Access</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Keyless retinal and palm biometric sync. Train uninterrupted whenever your hormonal and circadian rhythms hit absolute peak output.</p>
+</div>
+<!-- Card 2 -->
+<div class="group p-8 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-primary/60 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary mb-6 border border-outline-variant/40 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">sports_gymnastics</span>
+</div>
+<div class="text-label-caps font-label-caps text-outline mb-1">02 // SCIENTIFIC RIGOR</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Expert Physiology Coaching</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Olympic-certified strength specialists, PhD sports nutritionists, and physical therapists tracking your velocity-based training data.</p>
+</div>
+<!-- Card 3 -->
+<div class="group p-8 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-secondary/60 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-6 border border-outline-variant/40 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
+</div>
+<div class="text-label-caps font-label-caps text-outline mb-1">03 // AEROSPACE TOOLING</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Aerospace-Grade Hardware</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Eleiko competition calibrated discs, Keiser pneumatic smooth resistance, dual-force isometric plates, and wireless bar-path velocity trackers.</p>
+</div>
+<!-- Card 4 -->
+<div class="group p-8 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-primary/60 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary mb-6 border border-outline-variant/40 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">dynamic_form</span>
+</div>
+<div class="text-label-caps font-label-caps text-outline mb-1">04 // NEURAL COMPUTATION</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Algorithmic Adaptive Plans</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Daily algorithmic auto-regulation based on sleep HRV, muscular fatigue profiles, and continuous biometric output telemetry.</p>
+</div>
+<!-- Card 5 -->
+<div class="group p-8 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-tertiary/60 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-tertiary mb-6 border border-outline-variant/40 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">ac_unit</span>
+</div>
+<div class="text-label-caps font-label-caps text-outline mb-1">05 // REGENERATION SUITE</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Cryotherapy &amp; Hyperbaric Lab</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Full-body -110°C cryo chambers, 1.5 ATA hyperbaric oxygen therapy, far-infrared saunas, and contrast thermal plunge tubs.</p>
+</div>
+<!-- Card 6 -->
+<div class="group p-8 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-secondary/60 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-6 border border-outline-variant/40 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">groups</span>
+</div>
+<div class="text-label-caps font-label-caps text-outline mb-1">06 // THE ARENA</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-3">Uncompromising Community</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Zero distractions. High-caliber executives, pro athletes, and serious lifters upholding an unspoken code of ferocious execution.</p>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. SECTION 3 — ELITE PROGRAMS -->
+<!-- ========================================== -->
+<section class="py-24 bg-surface-container-lowest border-y border-outline-variant/20" id="overview">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-14">
+<div class="text-label-caps font-label-caps text-primary mb-2">TARGETED PROTOCOLS</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">ELITE TRAINING PROGRAMS</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mt-2">
+          Periodized protocols backed by velocity tracking, metabolic gas analysis, and neuromuscular recovery cycles.
+        </p>
+</div>
+<!-- Program Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Program 1 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col justify-between hover:border-primary transition-all">
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded bg-primary-container/20 text-primary text-label-caps font-label-caps">12 WEEKS</span>
+<span class="text-label-caps font-label-caps text-secondary">INTENSITY: 9.5 / 10</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">STRENGTH &amp; HYPERTROPHY</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6">
+              Progressive overload via force plates, biomechanical bar tracking, and maximal neuromuscular fiber recruitment.
+            </p>
+<div class="space-y-2 text-label-caps font-label-caps text-outline-variant">
+<div>TARGET: <span class="text-on-surface font-label-metric">Max Force Output &amp; Myofibrillar Density</span></div>
+<div>GEAR: <span class="text-on-surface font-label-metric">Calibrated Eleiko &amp; VBT Accelerometers</span></div>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest/60 border-t border-outline-variant/30">
+<button class="expand-protocol-btn w-full py-2.5 rounded border border-outline-variant/50 hover:border-primary text-label-caps font-label-caps text-on-surface hover:text-primary transition-colors flex items-center justify-center gap-2">
+<span>EXPAND PROTOCOL</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<div class="protocol-content hidden mt-4 pt-4 border-t border-outline-variant/30 text-body-sm font-body-sm text-on-surface-variant space-y-2">
+<p>• Phase 1: Eccentric overload &amp; tendon adaptation (Wks 1-4)</p>
+<p>• Phase 2: High velocity concentric recruitment (Wks 5-8)</p>
+<p>• Phase 3: Peak neurological 1RM calibration (Wks 9-12)</p>
+</div>
+</div>
+</div>
+<!-- Program 2 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col justify-between hover:border-secondary transition-all">
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container/20 text-secondary text-label-caps font-label-caps">8 WEEKS</span>
+<span class="text-label-caps font-label-caps text-secondary">INTENSITY: 9.8 / 10</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">METABOLIC SHRED &amp; FAT LOSS</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6">
+              High-density metabolic conditioning paired with continuous heart-rate telemetry to optimize mitochondrial fat oxidation.
+            </p>
+<div class="space-y-2 text-label-caps font-label-caps text-outline-variant">
+<div>TARGET: <span class="text-on-surface font-label-metric">Lactate Threshold &amp; EPOC Caloric Burn</span></div>
+<div>GEAR: <span class="text-on-surface font-label-metric">Keiser Air &amp; Real-Time ECG Sensors</span></div>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest/60 border-t border-outline-variant/30">
+<button class="expand-protocol-btn w-full py-2.5 rounded border border-outline-variant/50 hover:border-secondary text-label-caps font-label-caps text-on-surface hover:text-secondary transition-colors flex items-center justify-center gap-2">
+<span>EXPAND PROTOCOL</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<div class="protocol-content hidden mt-4 pt-4 border-t border-outline-variant/30 text-body-sm font-body-sm text-on-surface-variant space-y-2">
+<p>• Zone 2 aerobic base volume with glycogen depletion sprints</p>
+<p>• Tabata pneumatic anaerobic intervals at peak VO2</p>
+<p>• Daily metabolic rate adjustments via DEXA scans</p>
+</div>
+</div>
+</div>
+<!-- Program 3 -->
+<div class="bg-surface-container-low rounded-xl border border-outline-variant/40 overflow-hidden flex flex-col justify-between hover:border-tertiary transition-all">
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded bg-tertiary-container/20 text-tertiary text-label-caps font-label-caps">16 WEEKS</span>
+<span class="text-label-caps font-label-caps text-secondary">INTENSITY: 8.5 / 10</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">FUNCTIONAL KINETICS</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6">
+              Bulletproof articular joints, multidirectional fascial elasticity, and end-range strength to eliminate chronic restrictions.
+            </p>
+<div class="space-y-2 text-label-caps font-label-caps text-outline-variant">
+<div>TARGET: <span class="text-on-surface font-label-metric">Mobility, Spinal Decompression, Durability</span></div>
+<div>GEAR: <span class="text-on-surface font-label-metric">Kinstretch Rigs &amp; Isokinetic Dynamometers</span></div>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest/60 border-t border-outline-variant/30">
+<button class="expand-protocol-btn w-full py-2.5 rounded border border-outline-variant/50 hover:border-tertiary text-label-caps font-label-caps text-on-surface hover:text-tertiary transition-colors flex items-center justify-center gap-2">
+<span>EXPAND PROTOCOL</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<div class="protocol-content hidden mt-4 pt-4 border-t border-outline-variant/30 text-body-sm font-body-sm text-on-surface-variant space-y-2">
+<p>• Joint capsule mobilization and CARs (Controlled Articular Rotations)</p>
+<p>• Rotational slings &amp; anti-rotational thoracic power</p>
+<p>• End-range isometric holds for structural resilience</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. SECTION 4 — MASTER TRAINERS & SCIENTISTS -->
+<!-- ========================================== -->
+<section class="py-24 max-w-7xl mx-auto px-6" id="trainers">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<div class="text-label-caps font-label-caps text-secondary mb-2">PHYSIOLOGY FACULTY</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">
+          MASTER COACHES &amp; BIOMED SCIENTISTS
+        </h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-md">
+        Every coach at AURA holds master-level credentials in exercise physiology, functional kinematics, or performance endocrinology.
+      </p>
+</div>
+<!-- Trainer Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Trainer 1 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:border-secondary transition-all flex flex-col justify-between">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A portrait of an intense male strength coach in modern dark athletic gym gear holding a precision stopwatch, dramatic high-contrast studio rim lighting with subtle cyan neon reflections, professional athletic physiology aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlH2ovDN4SiREZpl7rbQ1ypNBgKZ2Oa--uGn7WmvwCRQ-ooEyPrceDEA49NI3Ppnq_VeGaCp3oC7cA9vRrK2Mlj0sg5A6_J95TRwvIKE64M-lJUsd6WD4rA8vAUoCsRiV6R3wQ-AoHwPT_M0ActtDvnC-PT8yt67S6rjn34zMXsDn4KBcW6y3-jWQdS-VDYlqt-T3K_XpvdEEINHc5OrGmzSDFaXTt0EGDWtI3OlwSHqNs520pcVqNvQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="text-label-caps font-label-caps text-secondary">CSCS // 9+ YRS EXP</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Alex Morgan</h3>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<p class="text-body-sm font-body-sm text-on-surface-variant">Head of Olympic Biomechanics &amp; Maximal Velocity Barbell Optimization.</p>
+<button class="open-dossier-btn w-full py-2 bg-surface-container-high hover:bg-surface-bright text-on-surface text-label-caps font-label-caps rounded transition-colors" data-role="Head of Biomechanics" data-stat="Squat PR: 310kg | 42 Pro Athletes Coached" data-trainer="Alex Morgan">
+            VIEW DOSSIER
+          </button>
+</div>
+</div>
+<!-- Trainer 2 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary transition-all flex flex-col justify-between">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A portrait of a focused female sports scientist with athletic build wearing modern high-tech laboratory fitness apparel, sharp cyan and violet rim lighting in a futuristic athletic facility, calm confident and authoritative expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFTtdptix46yDf0-gKdEi9IXi7fd_gDzM31_qCpXlZwy64uiazAt0wkO3sCDXLGnuNpqfy8bMS5kI2TIn-SyG97htxtyhuKj-LpYRjIC-FVcbaECTlL9btR53GXIiEOZ1MQnsriETU7JQ29aFbl8XejXeMTAjy_bWK_IuVug5_3HzMOAd75AY6dvL4eOSiVaVxRdM_VJBXVsxMRoZ_qSmsH0zAj1u6MV7cuv0vQbZtQWMHM2NMFeYAyA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="text-label-caps font-label-caps text-primary">PHD NUTRITION // 7+ YRS</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Dr. Sarah Williams</h3>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<p class="text-body-sm font-body-sm text-on-surface-variant">Director of Performance Nutrition, Metabolic Endocrine Balancing &amp; Glycogen Kinetics.</p>
+<button class="open-dossier-btn w-full py-2 bg-surface-container-high hover:bg-surface-bright text-on-surface text-label-caps font-label-caps rounded transition-colors" data-role="Director of Performance Nutrition" data-stat="300+ Metabolic Protocols Designed | Published Author" data-trainer="Dr. Sarah Williams">
+            VIEW DOSSIER
+          </button>
+</div>
+</div>
+<!-- Trainer 3 -->
+<div class="group bg-surface-container rounded-xl border border-outline-variant/30 hover:border-secondary transition-all flex flex-col justify-between overflow-hidden">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A portrait of a muscular elite conditioning coach standing inside a high-tech obsidian gym arena with subtle violet and cyan atmospheric backlighting, wearing black tactical compression shirt, focused and disciplined expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5tUTs4dsYhTOIr9qByJXHBxbv_EzAT48XrVBhgmH2mQvYT_ZsWoIEZ5BeQFlcrdlOzI3a34gafVPQIYxnl7WLkPxepFKVxLpKII2xzA-7e7e5ESttNkdHwzoGYpPN3RPhFDVLhRoQ6VSdD3Zu_AG-orwdFzEhkqFRg8InIu3fMr2tIE-XwhcdIxQAgDbi_YupwkDt2WQd8H-9TfF0f4KgNKUiv2-wKqn7a0hivEOEiMoVT1q0Tsn1-Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="text-label-caps font-label-caps text-secondary">PRO SPECIALIST // 11+ YRS</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Marcus Johnson</h3>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<p class="text-body-sm font-body-sm text-on-surface-variant">Master Hypertrophy Specialist &amp; Neuromuscular recruitment programming.</p>
+<button class="open-dossier-btn w-full py-2 bg-surface-container-high hover:bg-surface-bright text-on-surface text-label-caps font-label-caps rounded transition-colors" data-role="Hypertrophy &amp; Neuromuscular Specialist" data-stat="Deadlift PR: 340kg | Coach to 18 IFBB Pro Competitors" data-trainer="Marcus Johnson">
+            VIEW DOSSIER
+          </button>
+</div>
+</div>
+<!-- Trainer 4 -->
+<div class="group bg-surface-container rounded-xl border border-outline-variant/30 hover:border-tertiary transition-all flex flex-col justify-between overflow-hidden">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A portrait of a female mobility physical therapist in sleek black performance athletic wear inside an aerospace recovery lounge, clean architectural lighting with soft blue neon glow, embodying flexibility, strength and poise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY8JWbFOGT5JfwPvENDrLpblzzySILMIqOZ3NqJ_cdxGkW1LykKAz-yYyoQ5CXzhETvFHCvEmxCjtR01lI12jCKmfi-Kiak58r_jTrAQj4BMclKqXGVhL4h_7-_sZufIkfrpCrdC8gGc8P5uNyiP7yuL-NtJKxKu54inQ1v0EoNPIVTLMbB5wUTWrkKu_QfKRqHVWk2vqdIsmdVR1YqBMws-H8r-DTF2Gi2wmLSzExCUDmlOx6qX8TKg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="text-label-caps font-label-caps text-tertiary">DPT &amp; MOBILITY // 8+ YRS</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Elena Rostova</h3>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<p class="text-body-sm font-body-sm text-on-surface-variant">Functional Mobility, Joint Capsule Decompression &amp; Former International Gymnast.</p>
+<button class="open-dossier-btn w-full py-2 bg-surface-container-high hover:bg-surface-bright text-on-surface text-label-caps font-label-caps rounded transition-colors" data-role="Functional Mobility &amp; Restoration" data-stat="99.2% Rehabilitation Rate | Specialist in Lumbar-Spinal Integrity" data-trainer="Elena Rostova">
+            VIEW DOSSIER
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Dossier Modal -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-xl p-4" id="dossier-modal">
+<div class="bg-surface-container max-w-lg w-full rounded-xl border border-secondary p-6 shadow-2xl relative">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-secondary" id="close-dossier">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="text-label-caps font-label-caps text-secondary mb-1">COACH DOSSIER ARCHIVE</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-1" id="dossier-name">Alex Morgan</h3>
+<p class="text-title-md font-title-md text-primary mb-4" id="dossier-role">Head of Biomechanics</p>
+<div class="p-4 rounded bg-surface-container-lowest border border-outline-variant/40 space-y-2 mb-6">
+<div class="text-label-caps font-label-caps text-outline">VERIFIED PERFORMANCE RECORD:</div>
+<div class="text-body-md font-body-md text-on-surface" id="dossier-stat">Squat PR: 310kg | 42 Pro Athletes Coached</div>
+</div>
+<div class="flex gap-3">
+<a class="flex-1 py-3 text-center bg-primary text-on-primary font-label-caps text-label-caps rounded hover:opacity-90" href="#book-tour">
+          SCHEDULE BIO-ASSESSMENT
+        </a>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- 6. SECTION 5 — MEMBERSHIP TIERS -->
+<!-- ========================================== -->
+<section class="py-24 bg-surface-container-lowest" id="membership">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<div class="text-label-caps font-label-caps text-secondary mb-2">PRECISION MEMBERSHIP</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">INVEST IN YOUR BIOLOGY</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-3">
+          Uncompromised access. All tiers include digital telemetry telemetry sync and keyless 24/7 entry.
+        </p>
+<!-- Monthly / Annual Toggle -->
+<div class="mt-8 inline-flex items-center p-1 rounded-full bg-surface-container border border-outline-variant/40">
+<button class="px-5 py-2 rounded-full text-label-caps font-label-caps bg-secondary text-on-secondary transition-all" id="toggle-monthly">
+            MONTHLY
+          </button>
+<button class="px-5 py-2 rounded-full text-label-caps font-label-caps text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1.5" id="toggle-annual">
+            ANNUAL <span class="text-[10px] text-tertiary">SAVE 25% + 2 DEXA</span>
+</button>
+</div>
+</div>
+<!-- Pricing Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+<!-- Tier 1 -->
+<div class="bg-surface-container rounded-xl border border-outline-variant/40 p-8 flex flex-col justify-between hover:border-outline transition-all">
+<div>
+<div class="text-label-caps font-label-caps text-outline mb-1">TIER 01</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-4">CORE ACCESS</h3>
+<div class="mb-6">
+<span class="text-headline-lg font-headline-lg text-on-surface" id="t1-price">₹999</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant" id="t1-period">/ month</span>
+</div>
+<ul class="space-y-3 text-body-sm font-body-sm text-on-surface-variant mb-8">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> 24/7 Keyless Biometric Entry</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Full Eleiko Strength Floor &amp; Cardio</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Digital Locker &amp; Shower Facilities</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Kinetix Telemetry Mobile App</li>
+</ul>
+</div>
+<button class="select-plan-btn w-full py-3 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface text-label-caps font-label-caps uppercase border border-outline-variant/40 transition-colors">
+            SELECT CORE ACCESS
+          </button>
+</div>
+<!-- Tier 2 (Featured) -->
+<div class="bg-surface-container-high rounded-xl border-2 border-secondary p-8 flex flex-col justify-between relative shadow-2xl purple-glow">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-secondary text-on-secondary text-label-caps font-label-caps">
+            MOST POPULAR // PERFORMANCE OPTIMAL
+          </div>
+<div>
+<div class="text-label-caps font-label-caps text-secondary mb-1">TIER 02</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-4">PRO PERFORMANCE</h3>
+<div class="mb-6">
+<span class="text-headline-lg font-headline-lg text-secondary" id="t2-price">₹1,999</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant" id="t2-period">/ month</span>
+</div>
+<ul class="space-y-3 text-body-sm font-body-sm text-on-surface-variant mb-8">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Everything in Core Access</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Unlimited HIIT &amp; Functional Kinetics Classes</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Real-Time Heart-Rate &amp; Velocity Telemetry</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Monthly Dual-Energy DEXA Body Scan</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Recovery Suite Access (Sauna &amp; Cold Plunges)</li>
+</ul>
+</div>
+<button class="select-plan-btn w-full py-3.5 rounded bg-secondary text-on-secondary text-label-caps font-label-caps uppercase font-bold tracking-wider hover:bg-secondary-fixed transition-colors shadow-lg">
+            SELECT PRO PERFORMANCE
+          </button>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-container rounded-xl border border-primary/50 p-8 flex flex-col justify-between hover:border-primary transition-all">
+<div>
+<div class="text-label-caps font-label-caps text-primary mb-1">TIER 03</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-4">ELITE BLACK / VIP</h3>
+<div class="mb-6">
+<span class="text-headline-lg font-headline-lg text-primary" id="t3-price">₹3,499</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant" id="t3-period">/ month</span>
+</div>
+<ul class="space-y-3 text-body-sm font-body-sm text-on-surface-variant mb-8">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> All Pro Performance Inclusions</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> 4x Monthly 1-on-1 Biomechanic Coaching</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Unlimited -110°C Cryotherapy &amp; Hyperbaric Pods</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Nutrition Concierge &amp; Bloodwork Audit</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Reserved Private Locker with Laundry Service</li>
+</ul>
+</div>
+<button class="select-plan-btn w-full py-3 rounded bg-primary-container text-on-primary-container text-label-caps font-label-caps uppercase hover:bg-primary transition-colors">
+            SELECT ELITE BLACK
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 7. SECTION 6 — BEFORE & AFTER TRANSFORMATION -->
+<!-- ========================================== -->
+<section class="py-24 max-w-7xl mx-auto px-6" id="results">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="text-label-caps font-label-caps text-secondary mb-2">EMPIRICAL OUTCOMES</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">
+        TRANSFORMATION LAB
+      </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">
+        We don't guess. We measure lean mass, cellular hydration, and force curve output. Slide to view before &amp; after telemetry.
+      </p>
+</div>
+<!-- Case Study Card with Interactive Split View -->
+<div class="bg-surface-container rounded-2xl border border-outline-variant/30 p-6 md:p-10 max-w-5xl mx-auto">
+<!-- Tabs for Case Studies -->
+<div class="flex flex-wrap gap-3 mb-8 border-b border-outline-variant/30 pb-4">
+<button class="case-study-tab px-4 py-2 rounded text-label-caps font-label-caps bg-surface-container-high text-secondary border border-secondary/50" data-case="0">
+          CASE 01: DAVID K. (12 WEEKS)
+        </button>
+<button class="case-study-tab px-4 py-2 rounded text-label-caps font-label-caps text-on-surface-variant hover:text-on-surface" data-case="1">
+          CASE 02: MAYA S. (16 WEEKS)
+        </button>
+<button class="case-study-tab px-4 py-2 rounded text-label-caps font-label-caps text-on-surface-variant hover:text-on-surface" data-case="2">
+          CASE 03: VIKRAM R. (24 WEEKS)
+        </button>
+</div>
+<!-- Before / After Visual Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Interactive Split Comparison -->
+<div class="lg:col-span-7">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden select-none border border-outline-variant/40" id="comparison-box">
+<!-- 'After' Layer (Base) -->
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Athletic muscular male post-transformation standing confidently in high-tech gym lighting with visible definition, low body fat, and powerful athletic posture in dark compression shorts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmT2roiPcdRwo7NpKMPLLjTCeY6E9QNrqiVgkINGXC2alJWhP7NyNYmsoUW6LOE3PxLj252JUaDLoKgq-Y5P1ZkG_xT2ZiuvN9Y_zRq93zh7blL_RcJVgBBb5g09ErzGRiPVlhDdgYRtUpq2Xo9JWJKEecvNoZ6QigzIIa3RrcLBs48AmjILl14yh4JQT67T2D_0exmahFIVq0dDa6w3H3KhmtzZgYxi92OwwwgZpkGawbFiZa08GZ8A"/>
+<span class="absolute top-4 right-4 z-10 px-3 py-1 rounded bg-secondary text-on-secondary text-label-caps font-label-caps">AFTER: 12 WEEKS</span>
+<!-- 'Before' Layer (Clipped via Javascript width) -->
+<div class="absolute inset-0 w-1/2 overflow-hidden border-r-2 border-secondary shadow-2xl" id="before-layer">
+<img class="absolute inset-0 w-[800px] max-w-none h-full object-cover" data-alt="Male subject prior to athletic training regime in a baseline physical test room under neutral clinical lighting, showing softer physique and standard posture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO1YlTZ1_i5_adrfBSHMF1cYrGl_m6e82OXxFNzsMPmh5M8SCBedDeX5v7hzPVcq0EVntJaX4ufItrbTgUfePahfPNphaw6GFYU3JPPVaMSmywklCDlpBnrFTqVBmg-59biWdHGKUpP5m8aP8Fp0aRqRiiM-V1EgElphKlJULA5LTP4IQVTOI8AdafXOCdsW7ZGCMkQvHp_xYs1qikcsgNHZLwv0rv21n4u1HDDl7eDoZpTGjy6O5sfw"/>
+<span class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-highest text-on-surface text-label-caps font-label-caps">BASELINE</span>
+</div>
+<!-- Slider Handle overlay -->
+<input class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-20" id="compare-slider" max="100" min="0" type="range" value="50"/>
+</div>
+<p class="text-center text-label-caps font-label-caps text-outline-variant mt-3">
+            ← DRAG SLIDER TO REVEAL TELEMETRY →
+          </p>
+</div>
+<!-- Case Study Telemetry Breakdown -->
+<div class="lg:col-span-5 space-y-6">
+<div>
+<div class="text-label-caps font-label-caps text-secondary mb-1">SUBJECT PROTOCOL</div>
+<h3 class="text-headline-md font-headline-md text-on-surface" id="cs-name">David K., 34 — Software Architect</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2" id="cs-desc">
+              Suffered from chronic seated posture deficits and metabolic fatigue. Enrolled in 12-Week Neuromuscular Hypertrophy &amp; Zone-2 Reconditioning.
+            </p>
+</div>
+<!-- Metric Matrix -->
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded bg-surface-container-lowest border border-outline-variant/30">
+<div class="text-label-caps font-label-caps text-outline">FAT LOSS</div>
+<div class="text-headline-sm font-headline-sm text-secondary" id="cs-m1">-11.2 KG</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">24.5% → 13.8% Bodyfat</div>
+</div>
+<div class="p-4 rounded bg-surface-container-lowest border border-outline-variant/30">
+<div class="text-label-caps font-label-caps text-outline">LEAN MUSCLE</div>
+<div class="text-headline-sm font-headline-sm text-primary" id="cs-m2">+4.8 KG</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Validated via DEXA</div>
+</div>
+<div class="p-4 rounded bg-surface-container-lowest border border-outline-variant/30">
+<div class="text-label-caps font-label-caps text-outline">DEADLIFT PR</div>
+<div class="text-headline-sm font-headline-sm text-on-surface" id="cs-m3">180 KG</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">+65kg Over Baseline</div>
+</div>
+<div class="p-4 rounded bg-surface-container-lowest border border-outline-variant/30">
+<div class="text-label-caps font-label-caps text-outline">RESTING HR</div>
+<div class="text-headline-sm font-headline-sm text-tertiary" id="cs-m4">49 BPM</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">-19 BPM Reduction</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 8. SECTION 7 — LIVE CLASS TIMETABLE -->
+<!-- ========================================== -->
+<section class="py-24 bg-surface-container-lowest border-y border-outline-variant/20" id="timetable">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<div class="text-label-caps font-label-caps text-secondary mb-2">LIVE ARENA SCHEDULE</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">
+            CLASS TIMETABLE &amp; SPOT RESERVATION
+          </h2>
+</div>
+<!-- Day Filters -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2">
+<button class="day-filter px-3 py-1.5 rounded text-label-caps font-label-caps bg-secondary text-on-secondary" data-day="Mon">MON</button>
+<button class="day-filter px-3 py-1.5 rounded text-label-caps font-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface" data-day="Tue">TUE</button>
+<button class="day-filter px-3 py-1.5 rounded text-label-caps font-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface" data-day="Wed">WED</button>
+<button class="day-filter px-3 py-1.5 rounded text-label-caps font-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface" data-day="Thu">THU</button>
+<button class="day-filter px-3 py-1.5 rounded text-label-caps font-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface" data-day="Fri">FRI</button>
+<button class="day-filter px-3 py-1.5 rounded text-label-caps font-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface" data-day="Sat">SAT</button>
+</div>
+</div>
+<!-- Live Class Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="classes-container">
+<!-- Class 1 -->
+<div class="class-card p-6 rounded-xl bg-surface-container border border-outline-variant/40 flex flex-col justify-between space-y-6">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-label-caps font-label-caps text-secondary">06:30 - 07:30 • LAB A</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-caps bg-error-container/40 text-error">4 SPOTS LEFT</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Kinetic Olympic Barbell</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Coach: Alex Morgan • Biomechanical velocity &amp; heavy compound lifts.</p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="text-label-caps font-label-caps text-outline">INTENSITY 9.5</span>
+<button class="book-spot-btn px-4 py-2 rounded bg-surface-container-high hover:bg-secondary hover:text-on-secondary text-label-caps font-label-caps text-on-surface transition-colors">
+              BOOK SPOT
+            </button>
+</div>
+</div>
+<!-- Class 2 -->
+<div class="class-card p-6 rounded-xl bg-surface-container border border-outline-variant/40 flex flex-col justify-between space-y-6">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-label-caps font-label-caps text-primary">08:00 - 09:00 • ARENA B</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-caps bg-secondary-container/30 text-secondary">8 SPOTS LEFT</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Metabolic Lactate Threshold</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Coach: Dr. Sarah Williams • High-intensity interval pacing and ergometers.</p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="text-label-caps font-label-caps text-outline">INTENSITY 9.0</span>
+<button class="book-spot-btn px-4 py-2 rounded bg-surface-container-high hover:bg-secondary hover:text-on-secondary text-label-caps font-label-caps text-on-surface transition-colors">
+              BOOK SPOT
+            </button>
+</div>
+</div>
+<!-- Class 3 -->
+<div class="class-card p-6 rounded-xl bg-surface-container border border-outline-variant/40 flex flex-col justify-between space-y-6">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-label-caps font-label-caps text-tertiary">17:30 - 18:30 • RECOVERY POD</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-caps bg-surface-variant text-outline">2 SPOTS LEFT</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Joint Capsule &amp; Fascial Restoration</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Coach: Elena Rostova • Spinal decompression, CARs and mobility drills.</p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="text-label-caps font-label-caps text-outline">INTENSITY 6.5</span>
+<button class="book-spot-btn px-4 py-2 rounded bg-surface-container-high hover:bg-secondary hover:text-on-secondary text-label-caps font-label-caps text-on-surface transition-colors">
+              BOOK SPOT
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 9. SECTION 8 — BIOMETRIC CALCULATOR SUITE -->
+<!-- ========================================== -->
+<section class="py-24 max-w-7xl mx-auto px-6" id="calculators">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<div class="text-label-caps font-label-caps text-primary mb-2">TELEMETRY DIAGNOSTICS</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">
+        BIOMETRIC COMPUTATION SUITE
+      </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">
+        Compute your physiological baseline in real time using clinical algorithms (Mifflin-St Jeor &amp; Katch-McArdle).
+      </p>
+<!-- Calculator Mode Switch -->
+<div class="mt-8 flex justify-center flex-wrap gap-2">
+<button class="calc-tab-btn px-4 py-2 rounded text-label-caps font-label-caps bg-primary text-on-primary" data-calc="bmi">
+          1. BMI MATRIX
+        </button>
+<button class="calc-tab-btn px-4 py-2 rounded text-label-caps font-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface" data-calc="bmr">
+          2. BMR &amp; TDEE
+        </button>
+<button class="calc-tab-btn px-4 py-2 rounded text-label-caps font-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface" data-calc="macros">
+          3. MACRONUTRIENT TARGETS
+        </button>
+</div>
+</div>
+<!-- Active Calculator Display Frame -->
+<div class="max-w-3xl mx-auto bg-surface-container rounded-2xl border border-outline-variant/40 p-8 shadow-2xl backdrop-blur-md">
+<!-- Panel 1: BMI -->
+<div class="calc-view space-y-6" id="calc-bmi-panel">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-2">HEIGHT (CM)</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface focus:border-secondary focus:ring-0" id="bmi-height" type="number" value="180"/>
+</div>
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-2">WEIGHT (KG)</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface focus:border-secondary focus:ring-0" id="bmi-weight" type="number" value="82"/>
+</div>
+</div>
+<button class="w-full py-3 rounded bg-secondary text-on-secondary text-label-caps font-label-caps uppercase tracking-wider font-bold" id="calc-bmi-btn">
+          COMPUTE BODY MASS INDEX
+        </button>
+<div class="p-6 rounded bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="text-label-caps font-label-caps text-outline">DIAGNOSTIC BMI SCORE</div>
+<div class="text-headline-lg font-headline-lg text-secondary" id="bmi-result-val">25.3</div>
+</div>
+<div class="text-right">
+<div class="text-label-caps font-label-caps text-outline">CLASSIFICATION</div>
+<div class="text-title-md font-title-md text-primary" id="bmi-result-class">ATHLETIC // HEALTHY RANGE</div>
+</div>
+</div>
+</div>
+<!-- Panel 2: BMR & TDEE -->
+<div class="calc-view hidden space-y-6" id="calc-bmr-panel">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-2">AGE (YRS)</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface" id="bmr-age" type="number" value="28"/>
+</div>
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-2">GENDER</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface" id="bmr-gender">
+<option value="male">MALE</option>
+<option value="female">FEMALE</option>
+</select>
+</div>
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-2">DAILY ACTIVITY LEVEL</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface text-sm" id="bmr-activity">
+<option value="1.2">Sedentary (Office desk)</option>
+<option selected="" value="1.55">Active (3-5 Gym Sessions)</option>
+<option value="1.725">Elite Athlete (6-7 High Output)</option>
+</select>
+</div>
+</div>
+<button class="w-full py-3 rounded bg-primary text-on-primary text-label-caps font-label-caps uppercase tracking-wider font-bold" id="calc-bmr-btn">
+          COMPUTE BASAL METABOLIC RATE
+        </button>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-5 rounded bg-surface-container-lowest border border-outline-variant/30">
+<div class="text-label-caps font-label-caps text-outline">BMR (RESTING)</div>
+<div class="text-headline-md font-headline-md text-on-surface" id="bmr-val">1,820 kcal</div>
+</div>
+<div class="p-5 rounded bg-surface-container-lowest border border-outline-variant/30">
+<div class="text-label-caps font-label-caps text-outline">TDEE (EXPENDITURE)</div>
+<div class="text-headline-md font-headline-md text-secondary" id="tdee-val">2,821 kcal</div>
+</div>
+</div>
+</div>
+<!-- Panel 3: Macronutrient -->
+<div class="calc-view hidden space-y-6" id="calc-macros-panel">
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-2">PRIMARY PHYSIOLOGY OBJECTIVE</label>
+<div class="grid grid-cols-3 gap-3">
+<button class="goal-pill py-2.5 rounded text-label-caps font-label-caps bg-secondary text-on-secondary" data-goal="cut">AGGRESSIVE SHRED</button>
+<button class="goal-pill py-2.5 rounded text-label-caps font-label-caps bg-surface-container-high text-on-surface-variant hover:text-on-surface" data-goal="maintain">MAINTENANCE</button>
+<button class="goal-pill py-2.5 rounded text-label-caps font-label-caps bg-surface-container-high text-on-surface-variant hover:text-on-surface" data-goal="bulk">LEAN HYPERTROPHY</button>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 pt-4 border-t border-outline-variant/30 text-center">
+<div class="p-4 rounded bg-surface-container-lowest border border-outline-variant/40">
+<div class="text-label-caps font-label-caps text-secondary mb-1">PROTEIN</div>
+<div class="text-headline-sm font-headline-sm text-on-surface" id="macro-p">210g</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">40% Split</div>
+</div>
+<div class="p-4 rounded bg-surface-container-lowest border border-outline-variant/40">
+<div class="text-label-caps font-label-caps text-primary mb-1">CARBOHYDRATES</div>
+<div class="text-headline-sm font-headline-sm text-on-surface" id="macro-c">220g</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">35% Split</div>
+</div>
+<div class="p-4 rounded bg-surface-container-lowest border border-outline-variant/40">
+<div class="text-label-caps font-label-caps text-tertiary mb-1">FATS</div>
+<div class="text-headline-sm font-headline-sm text-on-surface" id="macro-f">65g</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">25% Split</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 10. SECTION 9 — ATHLETE TESTIMONIALS -->
+<!-- ========================================== -->
+<section class="py-24 bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-center justify-between mb-12">
+<div>
+<div class="text-label-caps font-label-caps text-secondary mb-1">ATHLETE DISPATCH</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">
+            VERIFIED EXPERIENCES
+          </h2>
+</div>
+<!-- Carousel navigation arrows -->
+<div class="flex gap-2">
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant/40" id="prev-test">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant/40" id="next-test">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Testimonial Slider Frame -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container border border-outline-variant/30 p-8 md:p-12">
+<div class="space-y-6" id="testimonial-track">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-2 text-label-caps font-label-caps text-on-surface">5.0 // VERIFIED PERFORMANCE RECORD</span>
+</div>
+<p class="text-headline-sm md:text-headline-md font-headline-md text-on-surface italic max-w-4xl" id="test-quote">
+            "AURA is the antithesis of the commercial health club. The velocity bar sensors and continuous DEXA monitoring gave me quantitative benchmarks I had never experienced. My power output increased 28% in 10 weeks."
+          </p>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/30">
+<div>
+<div class="text-title-md font-title-md text-on-surface" id="test-author">Captain Julian Vance</div>
+<div class="text-body-sm font-body-sm text-secondary" id="test-meta">Aerospace Test Pilot &amp; Powerlifter</div>
+</div>
+<div class="text-label-caps font-label-caps text-outline">MEMBER #8194</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 11. SECTION 10 — LAB FACILITY GALLERY -->
+<!-- ========================================== -->
+<section class="py-24 max-w-7xl mx-auto px-6" id="gallery">
+<div class="mb-14">
+<div class="text-label-caps font-label-caps text-secondary mb-2">ARENA ARCHITECTURE</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">
+        CINEMATIC LAB FACILITY
+      </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mt-2">
+        Explore the subterranean titanium strength hall, contrast therapy suites, and pneumatic velocity chambers.
+      </p>
+</div>
+<!-- Gallery Grid with Lightbox Interaction -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Photo 1 -->
+<div class="gallery-item group relative aspect-[4/3] rounded-xl overflow-hidden border border-outline-variant/30 cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Futuristic luxury gym floor with high ceiling and dark obsidian architectural elements, Olympic lifting platforms with matte black calibrated steel plates, illuminated by linear cyan and violet LED light strips." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKVUbPeIYk7t_1QFzd1Rfi-deOywOxp2_LuBA5iDS042m3iu-m39QiDRZkQHG_VtRdox0wYkAx10ubkYC9WrPG9At-YMXqJlEfRFcJKPaH9cVNKMhaPA1ZEGIcqIdSQLaBdrczdAli_QbYfAjy8DaBAHJUuS_dkEcvNM6YyPZa_GCnoiWvCd4yuYVE_fk6QabbCD-g3M5cusLubsdfR0nm4i2atGGdvaRnYI0hXSTFW17-uNX7d8C81Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+<span class="text-label-caps font-label-caps text-secondary">OLYMPIC STRENGTH VAULT</span>
+</div>
+</div>
+<!-- Photo 2 -->
+<div class="gallery-item group relative aspect-[4/3] rounded-xl overflow-hidden border border-outline-variant/30 cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="State-of-the-art cryotherapy cold plunge room with steaming icy water baths and backlit glowing blue digital temperature displays reading 3 degrees Celsius, modern titanium finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn6ZeaIL5VssX2lcxxxXecEkifIyXDGs4wZ1Tkg_lo6bUaczCaXT0mcBxuSl7vemk28uHqtWWjujg3ZtSUcCtoLeA5H9Yi77CSw849FEWeomqasfvKwT9xI7TY4Dde6IlcrhNApGvuhALMFcXAG77cTApIBxsREYatJyjUsxlRyA7tB5gHsA5WviEOvr4_Rs0jLi5EngUGfQ9EqLEYT2I1U-fEsldAdc1Tx5JfZXgdMJ8HoXclRf988Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+<span class="text-label-caps font-label-caps text-primary">CONTRAST CRYO CHAMBERS</span>
+</div>
+</div>
+<!-- Photo 3 -->
+<div class="gallery-item group relative aspect-[4/3] rounded-xl overflow-hidden border border-outline-variant/30 cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="High-tech cardio and sprint analysis chamber featuring Keiser pneumatic resistance trainers, woodway curved treadmills, and overhead digital biometric telemetry monitors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ2-JgF9q65TYcNj0-KOLgKBXhD8zjbmwMiI2etC_9Yo7vehKMe_1EvpA5-sGMylSjh1Bffk9Q_86_zvmqlCs4QCwYVqh5UuNHatzjMSo6LDlK3BTWaXaCEuKeLfdJIi8xQhghzG2-roGwAfxstuSbbnUMkGHcOYvqdhRlMX6pjBfmRThLhJdTFV2Q6avZXqHULMF1V1tNzKO-hVSKLgvpubg7VU3r-qyROwZGQeALbvXJ0hGEqqh6ew"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
+<span class="text-label-caps font-label-caps text-secondary">PNEUMATIC SPRINT CORRIDOR</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 12. SECTION 11 — INTERACTIVE FAQ -->
+<!-- ========================================== -->
+<section class="py-24 bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="max-w-4xl mx-auto px-6">
+<div class="text-center mb-14">
+<div class="text-label-caps font-label-caps text-secondary mb-1">PROTOCOLS &amp; CLEARANCES</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase">
+          FREQUENTLY ANSWERED QUESTIONS
+        </h2>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<div class="faq-item border border-outline-variant/30 rounded-lg bg-surface-container overflow-hidden">
+<button class="faq-trigger w-full p-5 text-left flex items-center justify-between font-title-md text-title-md text-on-surface">
+<span>How does 24/7 keyless biometric access function?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">add</span>
+</button>
+<div class="faq-content hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant">
+            Upon membership activation, you undergo a 2-minute biometric optical registration. Access portals unlock automatically using dual-sensor recognition with zero physical fobs or badges required.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item border border-outline-variant/30 rounded-lg bg-surface-container overflow-hidden">
+<button class="faq-trigger w-full p-5 text-left flex items-center justify-between font-title-md text-title-md text-on-surface">
+<span>Can I pause or freeze my membership during international travel?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">add</span>
+</button>
+<div class="faq-content hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant">
+            Yes. Pro Performance and Elite Black tiers allow up to 60 days of annual membership suspension directly via the Kinetix mobile app with zero penalty fees.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item border border-outline-variant/30 rounded-lg bg-surface-container overflow-hidden">
+<button class="faq-trigger w-full p-5 text-left flex items-center justify-between font-title-md text-title-md text-on-surface">
+<span>Are introductory assessments included for beginners?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">add</span>
+</button>
+<div class="faq-content hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant">
+            All newly onboarded members receive a comprehensive 60-minute Biomechanical Baseline Audit, including force plate symmetry testing, mobility assessment, and body composition analysis.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item border border-outline-variant/30 rounded-lg bg-surface-container overflow-hidden">
+<button class="faq-trigger w-full p-5 text-left flex items-center justify-between font-title-md text-title-md text-on-surface">
+<span>What are the guest privileges under the VIP tiers?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">add</span>
+</button>
+<div class="faq-content hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant">
+            Elite Black tier members receive 4 monthly guest access passes with complimentary access to the recovery suite and full facility floor.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 13. SECTION 12 — BOOK A COMPLIMENTARY TOUR -->
+<!-- ========================================== -->
+<section class="py-24 max-w-7xl mx-auto px-6" id="book-tour">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Form Box -->
+<div class="lg:col-span-7 bg-surface-container rounded-2xl border border-outline-variant/40 p-8 md:p-12 shadow-2xl relative">
+<div class="text-label-caps font-label-caps text-secondary mb-2">ACCESS APPLICATION</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface uppercase mb-6">
+          BOOK A LAB TOUR &amp; BIO-SCAN
+        </h2>
+<form class="space-y-5" id="tour-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-1.5">FULL NAME</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface focus:border-secondary focus:ring-0 text-sm" placeholder="e.g. Sterling Archer" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-1.5">EMAIL ADDRESS</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface focus:border-secondary focus:ring-0 text-sm" placeholder="name@domain.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-1.5">PHONE NUMBER</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface focus:border-secondary focus:ring-0 text-sm" placeholder="+1 (555) 000-0000" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-1.5">PRIMARY GOAL</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface focus:border-secondary focus:ring-0 text-sm">
+<option>Maximal Strength &amp; Hypertrophy</option>
+<option>Body Recomposition &amp; Fat Loss</option>
+<option>Athletic Velocity &amp; VO2 Max</option>
+<option>Injury Rehabilitation &amp; Mobility</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-label-caps font-label-caps text-outline mb-1.5">PREFERRED TOUR TIME</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded p-3 text-on-surface focus:border-secondary focus:ring-0 text-sm">
+<option>Morning (07:00 - 11:00)</option>
+<option>Midday (11:00 - 15:00)</option>
+<option>Evening (16:00 - 20:00)</option>
+</select>
+</div>
+<button class="w-full py-4 rounded bg-gradient-to-r from-secondary-container to-inverse-primary text-white text-label-caps font-label-caps uppercase tracking-wider hover:opacity-90 transition-all font-bold shadow-lg" type="submit">
+            CONFIRM COMPLIMENTARY TOUR PASS
+          </button>
+</form>
+<div class="hidden absolute inset-0 bg-surface-container/95 backdrop-blur-md rounded-2xl flex flex-col items-center justify-center p-8 text-center space-y-4" id="form-success">
+<span class="material-symbols-outlined text-secondary text-5xl">task_alt</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">TOUR CLEARANCE RESERVED</h3>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-sm">
+            A confirmation pass has been dispatched to your email with GPS directions and digital access credentials.
+          </p>
+<button class="px-6 py-2 rounded bg-surface-container-high text-on-surface text-label-caps font-label-caps" id="reset-form">
+            BOOK ANOTHER SLOT
+          </button>
+</div>
+</div>
+<!-- Facility Location Card -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-8 bg-surface-container-low rounded-2xl border border-outline-variant/30 p-8 md:p-10">
+<div>
+<div class="text-label-caps font-label-caps text-primary mb-1">GLOBAL LOCATION</div>
+<h3 class="text-headline-md font-headline-md text-on-surface">AURA AEROSPACE CAMPUS</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">
+            Sector 7 Performance District, Suite 100<br/>
+            Cyber Hub City, 110001
+          </p>
+<div class="mt-4 space-y-1 text-body-sm font-body-sm text-outline">
+<div>COORDINATES: 28.6139° N, 77.2090° E</div>
+<div>STATUS: BIOMETRIC ENTRY ACTIVE 24/7/365</div>
+</div>
+</div>
+<div class="p-5 rounded bg-surface-container-lowest border border-outline-variant/40 space-y-3">
+<div class="text-label-caps font-label-caps text-secondary">TELEMETRY DESK</div>
+<div class="text-title-md font-title-md text-on-surface">+1 (800) 584-AURA</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">concierge@aura-athletics.tech</div>
+</div>
+<a class="w-full py-3 text-center rounded border border-secondary text-secondary text-label-caps font-label-caps hover:bg-secondary hover:text-on-secondary transition-colors" href="https://maps.google.com" target="_blank">
+          GET GPS DIRECTIONS
+        </a>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 14. MEMBER DASHBOARD MODAL / DRAWER -->
+<!-- ========================================== -->
+<div class="fixed inset-0 z-50 hidden bg-surface-container-lowest/80 backdrop-blur-xl flex items-center justify-center p-4" id="portal-modal">
+<div class="bg-surface-container border border-outline-variant/40 max-w-2xl w-full rounded-2xl p-6 md:p-8 shadow-2xl relative">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-secondary" id="close-portal">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="flex items-center gap-3 mb-6">
+<span class="w-3 h-3 rounded-full bg-secondary animate-ping"></span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">MEMBER BIOMETRIC PASSPORT</h3>
+</div>
+<!-- Member Card Component -->
+<div class="p-6 rounded-xl bg-gradient-to-r from-surface-container-high to-surface-container-lowest border border-secondary/40 shadow-inner mb-6 relative overflow-hidden">
+<div class="flex justify-between items-start mb-6">
+<div>
+<div class="text-label-caps font-label-caps text-secondary">AURA ATHLETE // PRO BLACK</div>
+<div class="text-headline-sm font-headline-sm text-on-surface">MARCUS CHEN</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-3xl">contactless</span>
+</div>
+<div class="flex justify-between items-end text-label-caps font-label-caps text-outline">
+<div>ID: 8839-0199-K</div>
+<div>ACTIVE STREAK: 18 CONSECUTIVE DAYS</div>
+</div>
+</div>
+<!-- Quick Metrics Grid -->
+<div class="grid grid-cols-3 gap-3 mb-6 text-center">
+<div class="p-3 bg-surface-container-lowest rounded border border-outline-variant/30">
+<div class="text-label-caps font-label-caps text-outline">RECOVERY HRV</div>
+<div class="text-title-md font-title-md text-secondary">88 ms (OPTIMAL)</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded border border-outline-variant/30">
+<div class="text-label-caps font-label-caps text-outline">CURRENT LOCKER</div>
+<div class="text-title-md font-title-md text-primary">#42 (PIN: 8941)</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded border border-outline-variant/30">
+<div class="text-label-caps font-label-caps text-outline">NEXT RESERVATION</div>
+<div class="text-title-md font-title-md text-tertiary">TODAY 17:30</div>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="w-full py-3 bg-secondary text-on-secondary rounded text-label-caps font-label-caps uppercase font-bold hover:bg-secondary-fixed transition-colors">
+          GENERATE ENTRY QR PASS
+        </button>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- 15. FOOTER (Shared Component Alignment) -->
+<!-- ========================================== -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/30 full-width bottom">
+<div class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between items-center gap-8">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-start space-y-2">
+<span class="text-headline-md font-headline-md tracking-widest text-on-surface dark:text-on-surface uppercase">AURA ATHLETICS</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant">
+          © 2025 AURA ATHLETIC TECHNOLOGIES. ALL RIGHTS RESERVED. PRECISION PERFORMANCE.
+        </p>
+</div>
+<!-- Mandatory Links from JSON -->
+<div class="flex flex-wrap justify-center gap-6 text-body-sm font-body-sm">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Biometric Privacy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Telemetry Terms</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">System Status</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Aerospace Research</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Athletic Lab Portal</a>
+</div>
+</div>
+</footer>
+<!-- ========================================== -->
+<!-- INLINE JAVASCRIPT: MICRO-INTERACTIONS -->
+<!-- ========================================== -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // 1. Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileNav = document.getElementById('mobile-nav');
+      if (mobileBtn && mobileNav) {
+        mobileBtn.addEventListener('click', () => {
+          mobileNav.classList.toggle('hidden');
+        });
+      }
+
+      // 2. Member Portal Modal
+      const openPortalBtn = document.getElementById('open-portal-btn');
+      const openPortalBtnMob = document.getElementById('open-portal-btn-mob');
+      const closePortalBtn = document.getElementById('close-portal');
+      const portalModal = document.getElementById('portal-modal');
+
+      const togglePortal = () => portalModal.classList.toggle('hidden');
+      if (openPortalBtn) openPortalBtn.addEventListener('click', togglePortal);
+      if (openPortalBtnMob) openPortalBtnMob.addEventListener('click', togglePortal);
+      if (closePortalBtn) closePortalBtn.addEventListener('click', togglePortal);
+
+      // 3. Protocol Accordion (Section 3)
+      document.querySelectorAll('.expand-protocol-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const content = btn.nextElementSibling;
+          content.classList.toggle('hidden');
+          const isHidden = content.classList.contains('hidden');
+          btn.querySelector('span:first-child').textContent = isHidden ? 'EXPAND PROTOCOL' : 'COLLAPSE PROTOCOL';
+        });
+      });
+
+      // 4. Trainer Dossier Modal
+      const dossierModal = document.getElementById('dossier-modal');
+      const closeDossier = document.getElementById('close-dossier');
+      const dossierName = document.getElementById('dossier-name');
+      const dossierRole = document.getElementById('dossier-role');
+      const dossierStat = document.getElementById('dossier-stat');
+
+      document.querySelectorAll('.open-dossier-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          dossierName.textContent = btn.dataset.trainer;
+          dossierRole.textContent = btn.dataset.role;
+          dossierStat.textContent = btn.dataset.stat;
+          dossierModal.classList.remove('hidden');
+        });
+      });
+
+      if (closeDossier) {
+        closeDossier.addEventListener('click', () => dossierModal.classList.add('hidden'));
+      }
+
+      // 5. Membership Annual/Monthly Toggle
+      const toggleMonthly = document.getElementById('toggle-monthly');
+      const toggleAnnual = document.getElementById('toggle-annual');
+      const t1 = document.getElementById('t1-price');
+      const t2 = document.getElementById('t2-price');
+      const t3 = document.getElementById('t3-price');
+      const p1 = document.getElementById('t1-period');
+      const p2 = document.getElementById('t2-period');
+      const p3 = document.getElementById('t3-period');
+
+      if (toggleMonthly && toggleAnnual) {
+        toggleAnnual.addEventListener('click', () => {
+          toggleAnnual.className = "px-5 py-2 rounded-full text-label-caps font-label-caps bg-secondary text-on-secondary transition-all flex items-center gap-1.5";
+          toggleMonthly.className = "px-5 py-2 rounded-full text-label-caps font-label-caps text-on-surface-variant hover:text-on-surface transition-all";
+          t1.textContent = "₹8,990"; p1.textContent = "/ year";
+          t2.textContent = "₹17,990"; p2.textContent = "/ year";
+          t3.textContent = "₹31,490"; p3.textContent = "/ year";
+        });
+
+        toggleMonthly.addEventListener('click', () => {
+          toggleMonthly.className = "px-5 py-2 rounded-full text-label-caps font-label-caps bg-secondary text-on-secondary transition-all";
+          toggleAnnual.className = "px-5 py-2 rounded-full text-label-caps font-label-caps text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1.5";
+          t1.textContent = "₹999"; p1.textContent = "/ month";
+          t2.textContent = "₹1,999"; p2.textContent = "/ month";
+          t3.textContent = "₹3,499"; p3.textContent = "/ month";
+        });
+      }
+
+      // 6. Before / After Comparison Slider
+      const compareSlider = document.getElementById('compare-slider');
+      const beforeLayer = document.getElementById('before-layer');
+      if (compareSlider && beforeLayer) {
+        compareSlider.addEventListener('input', (e) => {
+          beforeLayer.style.width = `${e.target.value}%`;
+        });
+      }
+
+      // Transformation Tabs
+      const caseStudies = [
+        { name: "David K., 34 — Software Architect", desc: "Suffered from chronic seated posture deficits. Enrolled in 12-Week Neuromuscular Hypertrophy.", m1: "-11.2 KG", m2: "+4.8 KG", m3: "180 KG", m4: "49 BPM" },
+        { name: "Maya S., 29 — Triathlete", desc: "Sought higher threshold power output. Enrolled in 16-Week Velocity & Lactate Conditioning.", m1: "-4.5 KG", m2: "+2.1 KG", m3: "VO2: 68", m4: "41 BPM" },
+        { name: "Vikram R., 42 — Venture Partner", desc: "Rebuilt core stabilization following lumbar strain. 24-Week Functional Kinetics.", m1: "-14.0 KG", m2: "+5.6 KG", m3: "210 KG", m4: "52 BPM" }
+      ];
+
+      document.querySelectorAll('.case-study-tab').forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.case-study-tab').forEach(t => {
+            t.className = "case-study-tab px-4 py-2 rounded text-label-caps font-label-caps text-on-surface-variant hover:text-on-surface";
+          });
+          tab.className = "case-study-tab px-4 py-2 rounded text-label-caps font-label-caps bg-surface-container-high text-secondary border border-secondary/50";
+          const data = caseStudies[index];
+          document.getElementById('cs-name').textContent = data.name;
+          document.getElementById('cs-desc').textContent = data.desc;
+          document.getElementById('cs-m1').textContent = data.m1;
+          document.getElementById('cs-m2').textContent = data.m2;
+          document.getElementById('cs-m3').textContent = data.m3;
+          document.getElementById('cs-m4').textContent = data.m4;
+        });
+      });
+
+      // 7. Spot Booking Interaction
+      document.querySelectorAll('.book-spot-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.textContent = "SPOT CONFIRMED ✓";
+          btn.classList.add('bg-secondary', 'text-on-secondary');
+          setTimeout(() => {
+            btn.textContent = "BOOK SPOT";
+            btn.classList.remove('bg-secondary', 'text-on-secondary');
+          }, 3000);
+        });
+      });
+
+      // 8. Calculators Switcher & Computations
+      const calcTabs = document.querySelectorAll('.calc-tab-btn');
+      const views = {
+        bmi: document.getElementById('calc-bmi-panel'),
+        bmr: document.getElementById('calc-bmr-panel'),
+        macros: document.getElementById('calc-macros-panel')
+      };
+
+      calcTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          calcTabs.forEach(t => t.className = "calc-tab-btn px-4 py-2 rounded text-label-caps font-label-caps bg-surface-container text-on-surface-variant hover:text-on-surface");
+          tab.className = "calc-tab-btn px-4 py-2 rounded text-label-caps font-label-caps bg-primary text-on-primary";
+          Object.values(views).forEach(v => v.classList.add('hidden'));
+          views[tab.dataset.calc].classList.remove('hidden');
+        });
+      });
+
+      // BMI Calc
+      const bmiBtn = document.getElementById('calc-bmi-btn');
+      if (bmiBtn) {
+        bmiBtn.addEventListener('click', () => {
+          const h = parseFloat(document.getElementById('bmi-height').value) / 100;
+          const w = parseFloat(document.getElementById('bmi-weight').value);
+          if (h && w) {
+            const bmi = (w / (h * h)).toFixed(1);
+            document.getElementById('bmi-result-val').textContent = bmi;
+            let status = "ATHLETIC // NORMAL";
+            if (bmi < 18.5) status = "BELOW OPTIMAL RANGE";
+            else if (bmi >= 25 && bmi < 29.9) status = "HYPERTROPHIC DENSE";
+            else if (bmi >= 30) status = "ELEVATED FAT MASS";
+            document.getElementById('bmi-result-class').textContent = status;
+          }
+        });
+      }
+
+      // BMR Calc
+      const bmrBtn = document.getElementById('calc-bmr-btn');
+      if (bmrBtn) {
+        bmrBtn.addEventListener('click', () => {
+          const age = parseInt(document.getElementById('bmr-age').value) || 28;
+          const gender = document.getElementById('bmr-gender').value;
+          const multiplier = parseFloat(document.getElementById('bmr-activity').value) || 1.55;
+          const h = parseFloat(document.getElementById('bmi-height').value) || 180;
+          const w = parseFloat(document.getElementById('bmi-weight').value) || 80;
+
+          let base = (10 * w) + (6.25 * h) - (5 * age);
+          base = (gender === 'male') ? base + 5 : base - 161;
+
+          document.getElementById('bmr-val').textContent = `${Math.round(base)} kcal`;
+          document.getElementById('tdee-val').textContent = `${Math.round(base * multiplier)} kcal`;
+        });
+      }
+
+      // 9. Testimonial Carousel
+      const testimonials = [
+        {
+          quote: "AURA is the antithesis of the commercial health club. The velocity bar sensors and continuous DEXA monitoring gave me quantitative benchmarks I had never experienced. My power output increased 28% in 10 weeks.",
+          author: "Captain Julian Vance",
+          meta: "Aerospace Test Pilot & Powerlifter"
+        },
+        {
+          quote: "The contrast therapy chambers and cryogenic pods cut my recovery timeline in half. I can train 6 days a week without the habitual tendon soreness that plagued my pro rugby career.",
+          author: "Liam O'Connor",
+          meta: "Former National Rugby Sevens"
+        }
+      ];
+      let tIdx = 0;
+      const tQuote = document.getElementById('test-quote');
+      const tAuth = document.getElementById('test-author');
+      const tMeta = document.getElementById('test-meta');
+      const nextT = document.getElementById('next-test');
+      const prevT = document.getElementById('prev-test');
+
+      const renderTestimonial = (idx) => {
+        tQuote.textContent = `"${testimonials[idx].quote}"`;
+        tAuth.textContent = testimonials[idx].author;
+        tMeta.textContent = testimonials[idx].meta;
+      };
+
+      if (nextT && prevT) {
+        nextT.addEventListener('click', () => {
+          tIdx = (tIdx + 1) % testimonials.length;
+          renderTestimonial(tIdx);
+        });
+        prevT.addEventListener('click', () => {
+          tIdx = (tIdx - 1 + testimonials.length) % testimonials.length;
+          renderTestimonial(tIdx);
+        });
+      }
+
+      // 10. FAQ Accordion
+      document.querySelectorAll('.faq-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const content = trigger.nextElementSibling;
+          const icon = trigger.querySelector('.material-symbols-outlined');
+          const isHidden = content.classList.contains('hidden');
+          content.classList.toggle('hidden');
+          icon.textContent = isHidden ? 'remove' : 'add';
+        });
+      });
+
+      // 11. Lead Tour Booking Form
+      const tourForm = document.getElementById('tour-form');
+      const formSuccess = document.getElementById('form-success');
+      const resetForm = document.getElementById('reset-form');
+
+      if (tourForm && formSuccess) {
+        tourForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          formSuccess.classList.remove('hidden');
+        });
+        if (resetForm) {
+          resetForm.addEventListener('click', () => {
+            tourForm.reset();
+            formSuccess.classList.add('hidden');
+          });
+        }
+      }
+
+    });
+  </script>
+</body></html>
