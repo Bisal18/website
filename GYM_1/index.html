@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeonForge Fitness | Hyderabad's Premium 3D Gym</title>
+  <meta name="description" content="Experience the future of fitness at NeonForge. State-of-the-art equipment, elite trainers, and immersive workout environments in Jubilee Hills, Hyderabad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="components.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="page-hero">
+      <div id="canvas-container" data-scene="icosahedron"></div>
+      <div class="container hero-content">
+        <h1>Forge Your Future at <span class="gradient-text">NEONFORGE</span></h1>
+        <p>Step into Hyderabad's most advanced fitness facility. High-tech equipment meets elite coaching in an environment designed for peak performance.</p>
+        <div style="display: flex; gap: 15px;">
+          <a href="contact.html" class="btn-glow">Start Free Trial</a>
+          <a href="pricing.html" class="btn-glow" style="background: transparent; border: 1px solid var(--accent-2);">View Plans</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 100px 20px;">
+      <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;" class="reveal">Our <span class="gradient-text">Programs</span></h2>
+      <div class="grid-3">
+        <div class="tilt-card glass-panel reveal">
+          <div class="card-content">
+            <h3>Hyper-Strength</h3>
+            <p style="color: var(--text-muted); margin-top: 15px;">Powerlifting and bodybuilding zones with competition-grade Eleiko plates.</p>
+            <a href="classes.html" style="margin-top: auto; color: var(--accent-2);">Explore &rarr;</a>
+          </div>
+        </div>
+        <div class="tilt-card glass-panel reveal">
+          <div class="card-content">
+            <h3>Neon-HIIT</h3>
+            <p style="color: var(--text-muted); margin-top: 15px;">High-intensity interval training guided by biometric feedback displays.</p>
+            <a href="classes.html" style="margin-top: auto; color: var(--accent-2);">Explore &rarr;</a>
+          </div>
+        </div>
+        <div class="tilt-card glass-panel reveal">
+          <div class="card-content">
+            <h3>Zen Gravity</h3>
+            <p style="color: var(--text-muted); margin-top: 15px;">Anti-gravity yoga and mobility flow sessions to restore and balance.</p>
+            <a href="classes.html" style="margin-top: auto; color: var(--accent-2);">Explore &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 0 20px 100px;">
+      <div class="stats-row reveal">
+        <div class="stat-item"><div class="stat-num gradient-text">12+</div><div class="stat-label">Years Running</div></div>
+        <div class="stat-item"><div class="stat-num gradient-text">4,500+</div><div class="stat-label">Members Trained</div></div>
+        <div class="stat-item"><div class="stat-num gradient-text">30+</div><div class="stat-label">Elite Trainers</div></div>
+        <div class="stat-item"><div class="stat-num gradient-text">18hrs</div><div class="stat-label">Daily Access</div></div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 0 20px 100px;">
+      <h2 class="section-title reveal">Meet Our <span class="gradient-text">Trainers</span></h2>
+      <p class="section-sub reveal">Certified experts who design every session around your goals.</p>
+      <div class="grid-4">
+        <div class="flip-card reveal">
+          <div class="flip-inner">
+            <div class="flip-face"><div class="avatar-ring">AK</div><h3>Arjun Kapoor</h3><p style="color: var(--text-muted);">Strength &amp; Powerlifting</p></div>
+            <div class="flip-back"><h4>10 yrs experience</h4><p style="margin-top: 10px; font-size: 0.9rem;">National-level powerlifter, specializes in progressive overload programming.</p></div>
+          </div>
+        </div>
+        <div class="flip-card reveal">
+          <div class="flip-inner">
+            <div class="flip-face"><div class="avatar-ring">SN</div><h3>Sara Nair</h3><p style="color: var(--text-muted);">HIIT &amp; Conditioning</p></div>
+            <div class="flip-back"><h4>7 yrs experience</h4><p style="margin-top: 10px; font-size: 0.9rem;">Former athlete, builds biometric-driven interval programs for fat loss.</p></div>
+          </div>
+        </div>
+        <div class="flip-card reveal">
+          <div class="flip-inner">
+            <div class="flip-face"><div class="avatar-ring">RV</div><h3>Rohan Verma</h3><p style="color: var(--text-muted);">Mobility &amp; Yoga</p></div>
+            <div class="flip-back"><h4>9 yrs experience</h4><p style="margin-top: 10px; font-size: 0.9rem;">Certified yoga instructor focused on injury recovery and flexibility.</p></div>
+          </div>
+        </div>
+        <div class="flip-card reveal">
+          <div class="flip-inner">
+            <div class="flip-face"><div class="avatar-ring">MI</div><h3>Meera Iyer</h3><p style="color: var(--text-muted);">Nutrition &amp; Physique</p></div>
+            <div class="flip-back"><h4>6 yrs experience</h4><p style="margin-top: 10px; font-size: 0.9rem;">Sports nutritionist pairing macro coaching with bodybuilding prep.</p></div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;"><a href="trainers.html" class="btn-glow">Meet The Full Team</a></div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | NeonForge Fitness</title>
+  <meta name="description" content="Book a free trial or ask a question at NeonForge Fitness, Jubilee Hills, Hyderabad.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="components.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main style="padding-top: 150px; padding-bottom: 100px;">
+    <section class="page-hero hero-sm" style="min-height: 0; position: absolute; top: 0; left: 0; width: 100%; height: 500px;">
+      <div id="canvas-container" data-scene="particles"></div>
+    </section>
+    <div class="container" style="position: relative;">
+      <div class="grid-2">
+        <div>
+          <h1>Get In <span class="gradient-text">Touch</span></h1>
+          <p style="color: var(--text-muted); margin-bottom: 30px;">Book your free trial, ask a question, or request personal training.</p>
+          <form onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone / WhatsApp" required>
+            <select required>
+              <option value="" disabled selected>Primary Goal</option>
+              <option value="weight-loss">Weight Loss</option>
+              <option value="muscle">Build Muscle</option>
+              <option value="trial">Book Free Trial</option>
+            </select>
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button type="submit" class="btn-glow">Send Message</button>
+          </form>
+        </div>
+        <div class="glass-panel" style="padding: 20px; display: flex; align-items: center; justify-content: center; background: rgba(34, 211, 238, 0.05);">
+          <!-- Map Placeholder -->
+          <div style="text-align: center; color: var(--text-muted);">
+            <svg width="64" height="64" fill="var(--accent-1)" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <h3>Jubilee Hills, Hyderabad</h3>
+            <p>Interactive Map Embed Goes Here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

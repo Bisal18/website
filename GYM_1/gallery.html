@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | NeonForge Fitness</title>
+  <meta name="description" content="A look inside NeonForge Fitness, Jubilee Hills, Hyderabad.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="components.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="page-hero hero-sm">
+      <div id="canvas-container" data-scene="particles"></div>
+      <div class="container hero-content">
+        <h1>Inside The <span class="gradient-text">Facility</span></h1>
+        <p>Click any tile for a closer look at our floor, studios, and recovery zone.</p>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 40px 20px 100px;">
+      <div class="gallery-grid reveal">
+        <div class="gallery-item">
+          <div class="gallery-media" style="background: linear-gradient(135deg, #7C3AED, #22D3EE);">Main Strength Floor</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-media" style="background: linear-gradient(135deg, #EC4899, #F97316);">Neon-HIIT Studio</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-media" style="background: linear-gradient(135deg, #22D3EE, #7C3AED);">Zen Gravity Room</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-media" style="background: linear-gradient(135deg, #F97316, #EC4899);">Free Weights Zone</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-media" style="background: linear-gradient(135deg, #7C3AED, #EC4899);">Recovery &amp; Sauna</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-media" style="background: linear-gradient(135deg, #22D3EE, #F97316);">Combat Flow Ring</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-media" style="background: linear-gradient(135deg, #EC4899, #7C3AED);">Locker Rooms</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-media" style="background: linear-gradient(135deg, #F97316, #22D3EE);">Nutrition Bar</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gallery-lightbox">
+      <button class="gallery-close" aria-label="Close">&times;</button>
+      <div class="gallery-lightbox-content"></div>
+    </div>
+  </main>
+</body>
+</html>

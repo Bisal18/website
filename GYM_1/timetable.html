@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Schedule | NeonForge Fitness</title>
+  <meta name="description" content="Weekly class timetable for NeonForge Fitness, Jubilee Hills, Hyderabad.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="components.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="page-hero hero-sm">
+      <div id="canvas-container" data-scene="particles"></div>
+      <div class="container hero-content">
+        <h1>Weekly <span class="gradient-text">Schedule</span></h1>
+        <p>Hover a slot for details. All classes on a first-come, first-served floor basis — arrive 10 min early.</p>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 40px 20px 100px;">
+      <div class="timetable-wrap reveal">
+        <div class="timetable-grid">
+          <div class="tt-cell tt-head"></div>
+          <div class="tt-cell tt-head">Mon</div>
+          <div class="tt-cell tt-head">Tue</div>
+          <div class="tt-cell tt-head">Wed</div>
+          <div class="tt-cell tt-head">Thu</div>
+          <div class="tt-cell tt-head">Fri</div>
+          <div class="tt-cell tt-head">Sat</div>
+
+          <div class="tt-cell tt-time">6:00 AM</div>
+          <div class="tt-cell tt-slot">Hyper-Strength</div>
+          <div class="tt-cell tt-slot">Neon-HIIT</div>
+          <div class="tt-cell tt-slot">Hyper-Strength</div>
+          <div class="tt-cell tt-slot">Neon-HIIT</div>
+          <div class="tt-cell tt-slot">Hyper-Strength</div>
+          <div class="tt-cell tt-slot">Iron Circuit</div>
+
+          <div class="tt-cell tt-time">8:00 AM</div>
+          <div class="tt-cell tt-slot">Zen Gravity</div>
+          <div class="tt-cell tt-slot">Combat Flow</div>
+          <div class="tt-cell tt-slot">Zen Gravity</div>
+          <div class="tt-cell tt-slot">Combat Flow</div>
+          <div class="tt-cell tt-slot">Zen Gravity</div>
+          <div class="tt-cell tt-slot">Recovery Lab</div>
+
+          <div class="tt-cell tt-time">5:30 PM</div>
+          <div class="tt-cell tt-slot">Iron Circuit</div>
+          <div class="tt-cell tt-slot">Hyper-Strength</div>
+          <div class="tt-cell tt-slot">Iron Circuit</div>
+          <div class="tt-cell tt-slot">Hyper-Strength</div>
+          <div class="tt-cell tt-slot">Iron Circuit</div>
+          <div class="tt-cell tt-empty"></div>
+
+          <div class="tt-cell tt-time">7:00 PM</div>
+          <div class="tt-cell tt-slot">Neon-HIIT</div>
+          <div class="tt-cell tt-slot">Zen Gravity</div>
+          <div class="tt-cell tt-slot">Neon-HIIT</div>
+          <div class="tt-cell tt-slot">Zen Gravity</div>
+          <div class="tt-cell tt-slot">Combat Flow</div>
+          <div class="tt-cell tt-empty"></div>
+
+          <div class="tt-cell tt-time">8:30 PM</div>
+          <div class="tt-cell tt-slot">Recovery Lab</div>
+          <div class="tt-cell tt-slot">Recovery Lab</div>
+          <div class="tt-cell tt-slot">Recovery Lab</div>
+          <div class="tt-cell tt-slot">Recovery Lab</div>
+          <div class="tt-cell tt-slot">Recovery Lab</div>
+          <div class="tt-cell tt-empty"></div>
+        </div>
+      </div>
+      <p class="text-muted" style="margin-top: 20px; font-size: 0.85rem;">Sunday: Open floor access only, 7 AM – 1 PM. No scheduled classes.</p>
+    </section>
+  </main>
+</body>
+</html>
